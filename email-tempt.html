@@ -9,6 +9,7 @@
     <title>Email Template</title>
 </head>
 <body>
+    <!-- aici ai dat width 500px iar in rest 400px, nu inteleg de ce. In felul acesta continutul nu este deloc centrat -->
     <table style=" 
                   width: 500px;
                   height: 700px;
@@ -19,7 +20,8 @@
                   font-family: Tahoma, Geneva, Verdana, sans-serif;">
         <tbody>
             <tr>
-                    <td style="
+                <!-- avem nevoie de colspan aici si la toate unde avem doar 1 table cell sa ne putem intinde pe cele 3 table cell pe care la avem la "30 % FF"-->
+                    <td colspan="3" style="
                             width: 400px;
                             height: 30px;
                             font-size: 25px;
@@ -29,7 +31,7 @@
                             letter-spacing: 1px;">CLICK TO IT!</td>
             </tr>
             <tr>    
-                   <td style="
+                   <td colspan="3" style="
                            width: 400px;
                            height: 30px;
                            font-size: 20px;
@@ -37,7 +39,7 @@
                            margin-bottom: 50px;
                            letter-spacing: 3px;">SALE ENDS TUESDAY.</td>
             <tr>
-                <td style="
+                <td colspan="3" style="
                            width: 400px;
                            height: 30px;
                            font-size: 35px;
@@ -50,39 +52,38 @@
             <tr>
                 <td style="
                             width: 50px;
-                            border: solid red 3px;
                             font-size: 150px;
                             font-weight: bolder;
-                            text-align: center;">30</td>
+                            text-align: center;
+                            padding-left: 140px;">30</td>
 
                 <td style=" width: 50px;
-                            border: solid pink 4px;
-                            font-size: 50px;">%</td>
+                            font-size: 30px;
+                            padding-left: 103px;">%</td>
 
                 <td style=" width: 50px;
                             font-size: 50px;
-                            font-weight: bolder;
-                            border: solid green 4px;">FF</td>
+                            font-weight: bolder;">FF</td>
             </tr>
             <tr>
-                <td style="font-size: 30px;
+                <td colspan="3" style="font-size: 30px;
                            font-weight: bolder;
                            text-align: center;
                            letter-spacing: 5px;
                            padding-bottom: 30px;">EVERYTHING*</td>
             </tr>
             <tr>
-                <td style="
+                <td colspan="3" style="
                            font-size: 20px;
                            text-align: center;">WITH CODE SALE30</td>
             </tr>
             <tr>
-                <td style="
+                <td colspan="3" style="
                             font-size: 18px;
                             text-align: center;">ONLINE ONLY.</td>
             </tr>
             <tr>
-                <td style="
+                <td colspan="3" style="
                            background-color: transparent;
                            text-align: center;">
                            <button type="button" style="
@@ -95,7 +96,8 @@
                                                         width: 200px;
                                                         height: 70px;
                                                         font-weight: bolder;
-                                                        font-size: 18px;">Shop now</button></td>
+                                                        font-size: 18px;
+                                                        border: 1px solid black;">Shop now</button></td>
             </tr>
         </tbody>
     </table>
